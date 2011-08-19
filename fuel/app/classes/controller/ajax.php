@@ -30,7 +30,7 @@ class Controller_Ajax extends Controller_Rest {
 		$pagerank = Google\Pagerank::check($domain);
 
 		return $this->response(array(
-			'message' => 'Your page rank is: '.(int) $pagerank.' <span>out of</span> 10',
+			'message' => 'Your PageRank is: '.(int) $pagerank.' <span>out of</span> 10',
 		));
 	}
 }

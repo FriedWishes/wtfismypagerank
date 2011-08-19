@@ -19,6 +19,7 @@ class Controller_Pagerank extends Controller_Template {
 	 */
 	public function action_index()
 	{
+		$this->template->title   = 'Google PageRank Checker';
 		$this->template->content = View::factory('pagerank/form');
 	}
 

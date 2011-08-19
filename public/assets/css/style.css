@@ -89,7 +89,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* Primary Styles */
 body {
-	background: #fff;
+	background: url('../img/background.png') top right no-repeat #fafafa;
 	text-align: center;
 	color: #333;
 }

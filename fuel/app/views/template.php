@@ -1,4 +1,3 @@
-
 <!doctype html>
 <!--[if lt IE 7]><html class="no-js ie ie6 lte9 lte8 lte7 oldie" lang="en"><![endif]-->
 <!--[if IE 7]><html class="no-js ie ie7 lte9 lte8 lte7 oldie" lang="en"><![endif]-->
@@ -13,9 +12,9 @@
 		<link rel="dns-prefetch" href="//ajax.googleapis.com" />
 
 		<!-- Document -->
-		<title><?php echo (isset($title) ? $title.' - ' : ''); ?>WTF is My Page Rank?</title>
-		<meta name="description" content="WTF is My Page Rank is a completely free tool to easily check your Google Page Rank.">
-		<meta name="keywords" content="page rank, pagerank, check page rank, google page rank, check pr, pr checker, page rank checker, pagerank checker">
+		<title><?php echo (isset($title) ? $title.' - ' : ''); ?>WTF is My PageRank?</title>
+		<meta name="description" content="WTF is My PageRank is a completely free tool to easily check your Google PageRank.">
+		<meta name="keywords" content="page rank, pagerank, check page rank, google page rank, google pagerank, check pagerank, check pr, pr checker, page rank checker, pagerank checker">
 		<meta name="author" content="/humans.txt">
 
 		<!--
@@ -29,7 +28,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- CSS: implied media="all" -->
-		<?php echo Asset::css('style.css'); ?>
+		<?php echo Asset::css('style.min.css'); ?>
 
 		<!--
 		All JavaScript at the bottom, except for Modernizr and Respond.
@@ -43,9 +42,9 @@
 
 		<div id="container">
 
-			<div id="banner">
-				<h1><?php echo \Html::anchor('/', 'WTF is My Page Rank?'); ?></h1>
-			</div>
+			<header id="banner">
+				<h1><?php echo \Html::anchor('/', 'WTF is My PageRank?'); ?></h1>
+			</header>
 
 			<div id="main" role="main">
 
@@ -56,17 +55,17 @@
 			<footer id="footer">
 				<nav id="menu">
 					<ul>
-						<li><?php echo \Html::anchor('/', 'WTF Is My Page Rank?'); ?></li>
+						<li><?php echo \Html::anchor('/', 'WTF Is My PageRank?'); ?></li>
 						<li>&middot;</li>
 						<li><?php echo \Html::anchor('faq#what', 'WTF Is This?'); ?></li>
 						<li>&middot;</li>
-						<li><?php echo \Html::anchor('faq#pagerank', 'WTF Is A Page Rank?'); ?></li>
+						<li><?php echo \Html::anchor('faq#pagerank', 'WTF Is A PageRank?'); ?></li>
 						<li>&middot;</li>
 						<li><?php echo \Html::anchor('faq#else', 'Anything Else?'); ?></li>
 					</ul>
 				</nav>
 				<p>
-					Created by <?php echo \Html::anchor('http://ninjarite.com/', 'Ninjarite Development Group'); ?>
+					Created by <?php echo \Html::anchor('http://ninjarite.com/', 'Ninjarite Development Group').PHP_EOL; ?>
 				</p>
 			</footer>
 
@@ -114,7 +113,9 @@
 
 				// cancel the form submittion
 				return false;
+
 			});
+
 		});
 		</script>
 		<!-- end dynamic variable javascript -->
